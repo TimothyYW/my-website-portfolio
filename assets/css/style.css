@@ -399,6 +399,26 @@ footer {
     font-weight: bold;
 }
 
+/* ── LINKS INSIDE SKILL CARDS ────────────────────────── */
+.tools-list a,
+.languages-list a,
+.web-dev-tools a,
+.human-languages-list a,
+.other-tools-list a {
+    color: #90cdf4;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.tools-list a:hover,
+.languages-list a:hover,
+.web-dev-tools a:hover,
+.human-languages-list a:hover,
+.other-tools-list a:hover {
+    color: #bee3f8;
+    text-decoration: underline;
+}
+
 /* ── FIREFLY CANVAS ──────────────────────────────────── */
 canvas {
     filter: blur(1px);

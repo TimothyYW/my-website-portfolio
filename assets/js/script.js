@@ -1,19 +1,21 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+document.addEventListener('DOMContentLoaded', function () {
+    var container = document.querySelector('.cdropdown-container');
+    if (!container) return;
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+    var trigger = container.querySelector(':scope > a');
+    var content = container.querySelector('.cdropdown-content');
+
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        var isOpen = container.classList.contains('dropdown-open');
+        container.classList.toggle('dropdown-open', !isOpen);
+        content.style.display = isOpen ? '' : 'flex';
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!container.contains(e.target)) {
+            container.classList.remove('dropdown-open');
+            content.style.display = '';
+        }
+    });
+});

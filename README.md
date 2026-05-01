@@ -3,7 +3,7 @@ This website is my personal website where it will be function as my portfolio. T
 
 ![Mock Test](assets/images/screenshot/mock-up-test.png)
 
-[Link](https://timothyyw.github.io/my-website/)
+[Link](https://timothyyw.github.io/my-website-portfolio/)
 
 # Feature
 

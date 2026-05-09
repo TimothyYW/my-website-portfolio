@@ -419,6 +419,33 @@ footer {
     text-decoration: underline;
 }
 
+/* ── SKILL LEVEL BADGES ──────────────────────────────── */
+.skill-level {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.skill-level.beginner {
+    background: rgba(72, 187, 120, 0.15);
+    color: #68d391;
+}
+
+.skill-level.intermediate {
+    background: rgba(99, 179, 237, 0.15);
+    color: #63b3ed;
+}
+
+.skill-level.expert {
+    background: rgba(183, 148, 244, 0.15);
+    color: #b794f4;
+}
+
 /* ── FIREFLY CANVAS ──────────────────────────────────── */
 canvas {
     filter: blur(1px);
